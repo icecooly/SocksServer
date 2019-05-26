@@ -1,0 +1,14 @@
+io/itit/socksserver/SocksIdleHandler.class
+io/itit/socksserver/UserNamePasswordAuth.class
+io/itit/socksserver/SocksChannelTrafficShapingHandler.class
+io/itit/socksserver/SocksChannelInitializer.class
+io/itit/socksserver/Socks5InitialRequestHandler.class
+io/itit/socksserver/UserNamePasswordAuthImpl.class
+io/itit/socksserver/SocksChannelTrafficShapingLog.class
+io/itit/socksserver/Socks5CommandRequestHandler$1.class
+io/itit/socksserver/Socks5PasswordAuthRequestHandler.class
+io/itit/socksserver/Socks5CommandRequestHandler$2.class
+io/itit/socksserver/Socks5CommandRequestHandler$Dst2ClientHandler.class
+io/itit/socksserver/SocksServer.class
+io/itit/socksserver/Socks5CommandRequestHandler.class
+io/itit/socksserver/Socks5CommandRequestHandler$Client2DstHandler.class
