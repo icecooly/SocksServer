@@ -276,7 +276,19 @@ public final class SocksServer{
 	}
 	//
 	public static void main(String[] args) throws Exception {
+		String needAuth=System.getProperty("needAuth");
+		String authUserName=System.getProperty("authUserName");
+		String authPassword=System.getProperty("authPassword");
 		SocksServer socksServer = new SocksServer();
+		if(needAuth!=null) {
+			socksServer.setNeedAuth(Boolean.valueOf(needAuth));
+		}
+		if(authUserName!=null) {
+			socksServer.setAuthUserName(authUserName);
+		}
+		if(authPassword!=null) {
+			socksServer.setAuthPassword(authPassword);
+		}
 		socksServer.start();
 		logger.info("SocksServer started listen:{}",socksServer.getPort());
 	}
