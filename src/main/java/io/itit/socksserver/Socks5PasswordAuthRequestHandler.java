@@ -34,8 +34,8 @@ public class Socks5PasswordAuthRequestHandler extends SimpleChannelInboundHandle
 	 */
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, DefaultSocks5PasswordAuthRequest msg) throws Exception {
-		if(logger.isDebugEnabled()) {
-			logger.debug("用户名密码: " + msg.username() + "," + msg.password());
+		if(logger.isInfoEnabled()) {
+			logger.info("用户名密码: " + msg.username() + "," + msg.password());
 		}
 		if(auth.auth(msg.username(), msg.password())) {
 			SocksChannelTrafficShapingHandler.setUserName(ctx, msg.username());
