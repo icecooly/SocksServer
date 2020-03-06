@@ -1,0 +1,1 @@
+nohup java -Dport=38808 -DneedAuth="true" -DauthUserName="admin" -DauthPassword="password" -cp .:lib/*:SocksServer.jar io.itit.socksserver.SocksServer > /dev/null 2>&1 &
