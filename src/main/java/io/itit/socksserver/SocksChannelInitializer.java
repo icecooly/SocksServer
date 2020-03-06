@@ -35,9 +35,9 @@ public class SocksChannelInitializer extends ChannelInitializer<SocketChannel>{
 				socksServer.getWriterIdleTimeSeconds(), 
 				socksServer.getAllIdleTimeSeconds()));
 		cp.addLast(new SocksIdleHandler());
-		if(socksServer.getLogLevel()!=null) {
-			cp.addLast(new LoggingHandler(socksServer.getLogLevel()));
-		}
+//		if(socksServer.getLogLevel()!=null) {
+//			cp.addLast(new LoggingHandler(socksServer.getLogLevel()));
+//		}
 		cp.addLast(Socks5ServerEncoder.DEFAULT);
 		cp.addLast(new Socks5InitialRequestDecoder());
 		cp.addLast(new Socks5InitialRequestHandler(socksServer));
