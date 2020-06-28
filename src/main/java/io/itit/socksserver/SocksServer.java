@@ -277,9 +277,13 @@ public final class SocksServer{
 	//
 	public static void main(String[] args) throws Exception {
 		String needAuth=System.getProperty("needAuth");
+		String port=System.getProperty("port");
 		String authUserName=System.getProperty("authUserName");
 		String authPassword=System.getProperty("authPassword");
 		SocksServer socksServer = new SocksServer();
+		if(port!=null) {
+			socksServer.setPort(Integer.valueOf(port));
+		}
 		if(needAuth!=null) {
 			socksServer.setNeedAuth(Boolean.valueOf(needAuth));
 		}
