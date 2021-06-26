@@ -6,7 +6,6 @@ import io.itit.socksserver.SocksServer;
 /**
  * 
  * @author skydu
- *
  */
 public class SocksServerTest {
 	//
